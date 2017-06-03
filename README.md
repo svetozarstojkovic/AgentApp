@@ -1,8 +1,10 @@
 # AgentApp
 
+open as raw
+
 1. use standalone-full.xml
 
-2. add this to destinations	
+2. add this to destinations
 	<jms-topic name="topic/informTopic">
 		<entry name="java:/jms/topic/informTopic"/>
 	</jms-topic>
