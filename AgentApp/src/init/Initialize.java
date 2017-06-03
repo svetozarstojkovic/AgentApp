@@ -188,6 +188,7 @@ public class Initialize {
 		} catch (Exception e) {
 			if (e instanceof SocketTimeoutException) {
 				Data.removeAgentCenter(agentCenter);
+				new Requests().makeDeleteRequest("http://"+Constants.getAgentCenter().getAddress()+"/AgentApp/rest/synchronize/node/"+agentCenter.getAddress());
 			}
 		}
 	}
